@@ -18,7 +18,7 @@
 
 Color:
 <ul>
-  <li *ngFor="let color of colors">{{color}}</li>
+  <li *ngFor="let color of colors" [ngStyle]="{'color': color}">{{color}}</li>
 </ul>
 <br/>
 <div [ngSwitch]="color">
@@ -27,8 +27,7 @@ Color:
   <div *ngSwitchCase="'green'">You picked green color</div>
   <div *ngSwitchDefault>Pick again</div>
 </div>
-<!--
-<div *ngFor="let color of colors; index as i">
-  <h2>{{i}} {{color}}</h2>
-</div>
--->
+
+
+<h3>ngClass - css</h3>
+Items: <span [ngClass]="{'invalid' : items.length==0, 'valid': items.length>0 }"> Size: {{items.length}}</span>

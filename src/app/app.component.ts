@@ -6,11 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-structural-directives';
+  title = '';
 
   name = "naresh";
   displayName = false;
   color = "red";
   colors = ["red","blue","green"]
   items = [];
+  //items=["Mac"];
+  
 }
