@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-structural-directives';
+
+  name = "naresh";
+  displayName = false;
+  color = "red";
+  colors = ["red","blue","green"]
+  items = [];
 }
